@@ -21,11 +21,11 @@
                 <td></td>
                 <td class="svtLine">세븐틴</td>
                 <td class="enLine">엔하이픈</td>
-                <td class="skzLine">스트레이키즈</td>
+                <td class="astroLine">아스트로</td>
+                <td class="vrvrLine">베리베리</td>
                 <td class="mxLine">몬스타엑스</td>
                 <td class="atzLine">에이티즈</td>
-                <td class="txtLine">TXT</td>
-                <td class="tbzLine">더보이즈</td>
+                <td class="onfLine"></td>
             </tr>
             <tr class="select_tr">
                 <th class="nickname"><input type="text" placeholder="닉네임"></th>
@@ -59,17 +59,27 @@
                         <option>니키</option>
                     </select>
                 </td>
-                <td class="skz_td skzLine">
+                <td class="astro_td astroLine">
                     <select class="member-select" name="member">
                         <option>--선택하세요--</option>
-                        <option>방찬</option>
-                        <option>리노</option>
-                        <option>창빈</option>
-                        <option>현진</option>
-                        <option>필릭스</option>
-                        <option>승민</option>
-                        <option>한</option>
-                        <option>아이엔</option>
+                        <option>엠제이</option>
+                        <option>진진</option>
+                        <option>차은우</option>
+                        <option>문빈</option>
+                        <option>라키</option>
+                        <option>윤산하</option>
+                    </select>
+                </td>
+                <td class="vrvr_td astroLine">
+                    <select class="member-select" name="member">
+                        <option>--선택하세요--</option>
+                        <option>동헌</option>
+                        <option>호영</option>
+                        <option>민찬</option>
+                        <option>계현</option>
+                        <option>연호</option>
+                        <option>용승</option>
+                        <option>강민</option>
                     </select>
                 </td>
                 <td class="mx_td mxLine">
@@ -96,30 +106,15 @@
                         <option>종호</option>
                     </select>
                 </td>
-                <td class="txt_td txtLine">
+                <td class="onf_td txtLine">
                     <select class="member-select" name="member">
                         <option>--선택하세요--</option>
-                        <option>연준</option>
-                        <option>수빈</option>
-                        <option>범규</option>
-                        <option>태현</option>
-                        <option>휴닝카이</option>
-                    </select>
-                </td>
-                <td class="tbz_td tbzLine">
-                    <select class="member-select" name="member">
-                        <option>--선택하세요--</option>
-                        <option>상연</option>
-                        <option>제이콥</option>
-                        <option>영훈</option>
-                        <option>현재</option>
-                        <option>주연</option>
-                        <option>케빈</option>
-                        <option>뉴</option>
-                        <option>큐</option>
-                        <option>주학년</option>
-                        <option>선우</option>
-                        <option>에릭</option>
+                        <option>효진</option>
+                        <option>이션</option>
+                        <option>제이어스</option>
+                        <option>와이엇</option>
+                        <option>MK</option>
+                        <option>유</option>
                     </select>
                 </td>
                 <td><button class="line_submit_btn">확인</button></td>
@@ -135,11 +130,11 @@
         <div id="div_lineRemove" class="hidden">
             <button id="svtLine_remove">세븐틴 줄 지우기</button>
             <button id="enLine_remove">엔하이픈 줄 지우기</button>
-            <button id="skzLine_remove">스트레이키즈 줄 지우기</button>
+            <button id="astroLine_remove">아스트로 줄 지우기</button>
+            <button id="vrvrLine_remove">베리베리 줄 지우기</button>
             <button id="mxLine_remove">몬스타엑스 줄 지우기</button>
             <button id="atzLine_remove">에이티즈 줄 지우기</button>
-            <button id="txtLine_remove">투바투 줄 지우기</button>
-            <button id="tbzLine_remove">더보이즈 줄 지우기</button>
+            <button id="onfLine_remove">온앤오프 줄 지우기</button>
         </div>
 
         <br>
