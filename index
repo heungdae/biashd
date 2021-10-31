@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>취향표 생성기</title>
+    <link rel="stylesheet" href="css/draw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <input type="text" placeholder="표 이름을 작성하세요" id="title_input" required>
+        <button id="titleBtn">확인</button>
+    </header>
+    <section class="table_draw">
+        <table class="main_table">
+            <tr class="column_index">
+                <td></td>
+                <td class="svtLine">세븐틴</td>
+                <td class="enLine">엔하이픈</td>
+                <td class="skzLine">스트레이키즈</td>
+                <td class="mxLine">몬스타엑스</td>
+                <td class="atzLine">에이티즈</td>
+                <td class="txtLine">TXT</td>
+                <td class="tbzLine">더보이즈</td>
+            </tr>
+            <tr class="select_tr">
+                <th class="nickname"><input type="text" placeholder="닉네임"></th>
+                <td class="svt_td svtLine">
+                    <select class="member-select" name="member" >
+                        <option>--선택하세요--</option>
+                        <option>에스쿱스</option>
+                        <option>정한</option>
+                        <option>조슈아</option>
+                        <option>원우</option>
+                        <option>준</option>
+                        <option>우지</option>
+                        <option>호시</option>
+                        <option>민규</option>
+                        <option>도겸</option>
+                        <option>디에잇</option>
+                        <option>승관</option>
+                        <option>버논</option>
+                        <option>디노</option>
+                    </select>
+                </td>
+                <td class="en_td enLine">
+                    <select class="member-select" name="member">
+                        <option>--선택하세요--</option>
+                        <option>희승</option>
+                        <option>제이</option>
+                        <option>제이크</option>
+                        <option>성훈</option>
+                        <option>선우</option>
+                        <option>정원</option>
+                        <option>니키</option>
+                    </select>
+                </td>
+                <td class="skz_td skzLine">
+                    <select class="member-select" name="member">
+                        <option>--선택하세요--</option>
+                        <option>방찬</option>
+                        <option>리노</option>
+                        <option>창빈</option>
+                        <option>현진</option>
+                        <option>필릭스</option>
+                        <option>승민</option>
+                        <option>한</option>
+                        <option>아이엔</option>
+                    </select>
+                </td>
+                <td class="mx_td mxLine">
+                    <select class="member-select" name="member">
+                        <option>--선택하세요--</option>
+                        <option>셔누</option>
+                        <option>민혁</option>
+                        <option>기현</option>
+                        <option>형원</option>
+                        <option>주헌</option>
+                        <option>아이엠</option>
+                    </select>
+                </td>
+                <td class="atz_td atzLine">
+                    <select class="member-select" name="member">
+                        <option>--선택하세요--</option>
+                        <option>홍중</option>
+                        <option>성화</option>
+                        <option>윤호</option>
+                        <option>여상</option>
+                        <option>산</option>
+                        <option>우영</option>
+                        <option>민기</option>
+                        <option>종호</option>
+                    </select>
+                </td>
+                <td class="txt_td txtLine">
+                    <select class="member-select" name="member">
+                        <option>--선택하세요--</option>
+                        <option>연준</option>
+                        <option>수빈</option>
+                        <option>범규</option>
+                        <option>태현</option>
+                        <option>휴닝카이</option>
+                    </select>
+                </td>
+                <td class="tbz_td tbzLine">
+                    <select class="member-select" name="member">
+                        <option>--선택하세요--</option>
+                        <option>상연</option>
+                        <option>제이콥</option>
+                        <option>영훈</option>
+                        <option>현재</option>
+                        <option>주연</option>
+                        <option>케빈</option>
+                        <option>뉴</option>
+                        <option>큐</option>
+                        <option>주학년</option>
+                        <option>선우</option>
+                        <option>에릭</option>
+                    </select>
+                </td>
+                <td><button class="line_submit_btn">확인</button></td>
+            </tr>
+            
+        </table>
+        <br>
+        <a id="select_remove">선택창 지우기/보이기</a>
+        <br>
+    </section>
+    <footer>
+        <br>
+        <div id="div_lineRemove" class="hidden">
+            <button id="svtLine_remove">세븐틴 줄 지우기</button>
+            <button id="enLine_remove">엔하이픈 줄 지우기</button>
+            <button id="skzLine_remove">스트레이키즈 줄 지우기</button>
+            <button id="mxLine_remove">몬스타엑스 줄 지우기</button>
+            <button id="atzLine_remove">에이티즈 줄 지우기</button>
+            <button id="txtLine_remove">투바투 줄 지우기</button>
+            <button id="tbzLine_remove">더보이즈 줄 지우기</button>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class='info'>
+            <ul>
+                <li>PC로 들어오시는 걸 권장합니다👍</li>
+                <li>"--선택하세요--" 옵션을 선택하면 공란이 출력됩니다.</li>
+                <li>"줄 지우기" 버튼은 모든 선택을 끝낸 후, 선택창을 지운 상태로 해주시길 바랍니다.</li>
+            </ul>
+        </div>
+        
+    </footer>
+    <script type="text/javascript" src="js/draw.js"></script>
+</body>
+</html>
