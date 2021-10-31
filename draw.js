@@ -5,11 +5,11 @@ const main_table = document.querySelector(".main_table");
 const selectRemoveBtn = document.querySelector("#select_remove");
 const svtRemove = document.querySelector("#svtLine_remove");
 const enRemove = document.querySelector("#enLine_remove");
-const skzRemove = document.querySelector("#skzLine_remove");
+const astroRemove = document.querySelector("#astroLine_remove");
+const vrvrRemove = document.querySelector("#vrvrLine_remove");
 const mxRemove = document.querySelector("#mxLine_remove");
 const atzRemove = document.querySelector("#atzLine_remove");
-const txtRemove = document.querySelector("#txtLine_remove");
-const tbzRemove = document.querySelector("#tbzLine_remove");
+const onfRemove = document.querySelector("#onfLine_remove");
 
 
 const svt_image = {
@@ -38,16 +38,24 @@ const en_image = {
     "성훈":"https://pbs.twimg.com/media/E9ZtIHXVgAIxsPQ?format=jpg&name=large",
     "니키":"https://pbs.twimg.com/media/FCJ68-gVUAMXstl?format=jpg&name=large",
 };
-const skz_image = {
+const astro_image = {
     "--선택하세요--" : "./img/default.jpg",
-    "현진":"https://pbs.twimg.com/media/E36oPSWUYAMzPzm?format=jpg&name=medium",
-    "필릭스":"https://pbs.twimg.com/media/E2foFq9UcAIbTot?format=jpg&name=medium",
-    "방찬":"https://pbs.twimg.com/media/E9uH2_yUYAEere5.jpg",
-    "리노":"https://pbs.twimg.com/media/FBviaBiVcAE6lvs?format=jpg&name=large",
-    "한":"https://pbs.twimg.com/media/EzlEPOWVoAAtjXz?format=jpg&name=medium",
-    "승민":"https://pbs.twimg.com/media/E1WzgLtVUAEDySN?format=jpg&name=medium",
-    "아이엔":"https://pbs.twimg.com/media/E8SBkB3UcAcog-2?format=jpg&name=large",
-    "창빈":"https://pbs.twimg.com/media/FCCzMGMXMAQ4C-C?format=jpg&name=4096x4096",
+    "엠제이":"https://pbs.twimg.com/media/FBpfwV_UUAYa0EZ?format=jpg&name=large",
+    "진진":"https://pbs.twimg.com/media/FCN2E5aVkAAX3R1?format=jpg&name=large",
+    "차은우":"https://pbs.twimg.com/media/FAsw9zSVgAAQ99y?format=jpg&name=large",
+    "문빈":"https://pbs.twimg.com/media/FCIluN8VkAEZsPr?format=jpg&name=large",
+    "라키":"https://pbs.twimg.com/media/FCO45hAVgAAHFPL?format=jpg&name=large",
+    "윤산하":"https://pbs.twimg.com/media/FCO3mA2VQAMc7tM?format=jpg&name=large",
+}
+const vrvr_image = {
+    "--선택하세요--" : "./img/default.jpg",
+    "동헌":"https://pbs.twimg.com/media/FBUhJpqVEAI9PCT?format=jpg&name=large",
+    "호영":"https://pbs.twimg.com/media/FCYt0vvUcAAGIxT?format=jpg&name=large",
+    "민찬":"https://pbs.twimg.com/media/FBZYeZGUYAQCFvK?format=jpg&name=large",
+    "계현":"https://pbs.twimg.com/media/FBviaBiVcAE6lvs?format=jpg&name=large",
+    "연호":"https://pbs.twimg.com/media/FC1oLsxaUAA5AgZ?format=jpg&name=large",
+    "용승":"https://pbs.twimg.com/media/FCtN5y8VUAESki3?format=jpg&name=large",
+    "강민":"https://pbs.twimg.com/media/FA2-qEjUUAEDFE4?format=jpg&name=large",
 }
 const mx_image = {
     "--선택하세요--" :  "./img/default.jpg",
@@ -69,27 +77,14 @@ const atz_image = {
     "윤호":"https://pbs.twimg.com/media/E9VE3CLVUAACy9S?format=jpg&name=large",
     "종호":"https://pbs.twimg.com/media/FB0v304WYAcOOrm?format=jpg&name=medium",
 }
-const txt_image = {
+const onf_image = {
     "--선택하세요--" : "./img/default.jpg",
-    "연준":"./img/yeonjun.jpg",
-    "수빈":"https://pbs.twimg.com/media/E8bgpe-VoAosZrZ?format=jpg&name=medium",
-    "범규":"https://pbs.twimg.com/media/E_Uz4GrUcAQ7IiI?format=jpg&name=large",
-    "태현":"https://pbs.twimg.com/media/FA8Yw-bXoAYtLZS?format=jpg&name=4096x4096",
-    "휴닝카이":"./img/hk.jpg",
-}
-const tbz_image = {
-    "--선택하세요--" : "./img/default.jpg",
-    "상연":"./img/상연.jpg",
-    "제이콥":"./img/제이콥.jpg",
-    "영훈":"./img/영훈.jpg",
-    "현재":"./img/현재.jpg",
-    "주연":"./img/주연.jpg",
-    "케빈":"./img/케빈.jpg",
-    "뉴":"./img/뉴.jpg",
-    "큐":"./img/큐.jpg",
-    "주학년":"./img/주학년.jpg",
-    "선우":"./img/선우.jpg",
-    "에릭":"./img/에릭.jpg",
+    "효진":"https://pbs.twimg.com/media/FBtMk4gUUAQItuS?format=jpg&name=large",
+    "이션":"https://pbs.twimg.com/media/FARwbHCVEAYU02E?format=jpg&name=large",
+    "제이어스":"https://pbs.twimg.com/media/FAsAWL3VUAgQRaE?format=jpg&name=large",
+    "와이엇":"https://pbs.twimg.com/media/FBBThFuUcAwkg-H?format=jpg&name=large",
+    "MK":"https://pbs.twimg.com/media/E-auO9dVgAUYgkR?format=jpg&name=large",
+    "유":"https://pbs.twimg.com/media/FARHg0gVIAUFuI5?format=jpg&name=large",
 }
 
 //함수
@@ -118,11 +113,11 @@ function submitLine(e){
     const nickname = document.querySelector(".nickname input");
     const svt_m = document.querySelector(".svt_td select");
     const en_m = document.querySelector(".en_td select");
-    const skz_m = document.querySelector(".skz_td select");
+    const astro_m = document.querySelector(".astro_td select");
+    const vrvr_m = document.querySelector(".vrvr_td select");
     const mx_m = document.querySelector(".mx_td select");
     const atz_m = document.querySelector(".atz_td select");
-    const txt_m = document.querySelector(".txt_td select");
-    const tbz_m = document.querySelector(".tbz_td select");
+    const onf_m = document.querySelector(".txt_td select");
 
     //select_tr을 clone해놓기
     const select_tr = document.querySelector(".select_tr");
@@ -147,10 +142,15 @@ function submitLine(e){
     // en_td.innerText = en_m.value;
     en_td.innerHTML = "<img src="+ en_image[en_m.value] + " />";
 
-    const skz_td = document.createElement("td");
-    skz_td.classList.add("skzLine");
-    // skz_td.innerText = skz_m.value;
-    skz_td.innerHTML = "<img src="+ skz_image[skz_m.value] + " />";
+    const astro_td = document.createElement("td");
+    astro_td.classList.add("astroLine");
+    // astro_td.innerText = astro_m.value;
+    astro_td.innerHTML = "<img src="+ astro_image[astro_m.value] + " />";
+    
+    const vrvr_td = document.createElement("td");
+    vrvr_td.classList.add("vrvrLine");
+    // vrvr_td.innerText = vrvr_m.value;
+    vrvr_td.innerHTML = "<img src="+ vrvr_image[vrvr_m.value] + " />";
 
     const mx_td = document.createElement("td");
     mx_td.classList.add("mxLine");
@@ -162,22 +162,18 @@ function submitLine(e){
     // atz_td.innerText = atz_m.value;
     atz_td.innerHTML = "<img src="+ atz_image[atz_m.value] + " />";
 
-    const txt_td = document.createElement("td");
-    txt_td.classList.add("txtLine");
-    txt_td.innerHTML = "<img src="+ txt_image[txt_m.value] + " />";
-
-    const tbz_td = document.createElement("td");
-    tbz_td.classList.add("tbzLine");
-    tbz_td.innerHTML = "<img src="+ tbz_image[tbz_m.value] + " />";
+    const onf_td = document.createElement("td");
+    onf_td.classList.add("onfLine");
+    onf_td.innerHTML = "<img src="+ onf_image[onf_m.value] + " />";
 
     newLine.appendChild(name_td);
     newLine.appendChild(svt_td);
     newLine.appendChild(en_td);
-    newLine.appendChild(skz_td);
+    newLine.appendChild(astro_td);
+    newLine.appendChild(vrvr_td);
     newLine.appendChild(mx_td);
     newLine.appendChild(atz_td);
-    newLine.appendChild(txt_td);
-    newLine.appendChild(tbz_td);
+    newLine.appendChild(onf_td);
 
     //select 치우고 라인 넣기
     select_tr.remove();
@@ -222,14 +218,25 @@ function enLineRemove(e){
     };
     
 }
-function skzLineRemove(e){
+function astroLineRemove(e){
     e.preventDefault();
 
     selectRemoveBtn.classList.add("hidden");
 
-    const skzlines = document.querySelectorAll(".skzLine");
-    for(let x in skzlines){
-        skzlines[x].classList.add("hidden");
+    const astrolines = document.querySelectorAll(".skzLine");
+    for(let x in astrolines){
+        astrolines[x].classList.add("hidden");
+    };
+    
+}
+function vrvrLineRemove(e){
+    e.preventDefault();
+    
+    selectRemoveBtn.classList.add("hidden");
+    
+    const vrvrlines = document.querySelectorAll(".vrvrline");
+    for(let x in vrvrlines){
+        vrvrlines[x].classList.add("hidden");
     };
     
 }
@@ -255,25 +262,14 @@ function atzLineRemove(e){
     };
     
 }
-function txtLineRemove(e){
+function onfLineRemove(e){
     e.preventDefault();
 
     selectRemoveBtn.classList.add("hidden");
 
-    const txtlines = document.querySelectorAll(`.txtLine`);
-    for(let x in txtlines){
-        txtlines[x].classList.add("hidden");
-    };
-    
-}
-function tbzLineRemove(e){
-    e.preventDefault();
-
-    selectRemoveBtn.classList.add("hidden");
-
-    const tbzlines = document.querySelectorAll(`.tbzLine`);
-    for(let x in tbzlines){
-        tbzlines[x].classList.add("hidden");
+    const onflines = document.querySelectorAll(`.txtLine`);
+    for(let x in onflines){
+        onflines[x].classList.add("hidden");
     };
     
 }
@@ -286,8 +282,9 @@ selectRemoveBtn.addEventListener("click", selectRemove);
 
 svtRemove.addEventListener("click", svtLineRemove);
 enRemove.addEventListener("click", enLineRemove);
-skzRemove.addEventListener("click", skzLineRemove);
+astroRemove.addEventListener("click", astroLineRemove);
+vrvrRemove.addEventListener("click",vrvrLineRemove);
 mxRemove.addEventListener("click", mxLineRemove);
 atzRemove.addEventListener("click", atzLineRemove);
-txtRemove.addEventListener("click", txtLineRemove);
+onfRemove.addEventListener("click", onfLineRemove);
 tbzRemove.addEventListener("click", tbzLineRemove);
