@@ -106,7 +106,7 @@ function handleTitle(e) { //표 제목 생성
     header.prepend(title__p);
 }
 
-function submitLine(e){
+function submitLine(e){ e = PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
     e.preventDefault();
 
     //입력 데이터 받기
