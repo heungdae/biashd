@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* background-color: rgba(135, 207, 235, 0.493); */
+    /* font-family: 'Black Han Sans', sans-serif; */
+    font-family: 'Cafe24Ssurround', sans-serif;
+}
+.hidden {
+    display: none;
+}
+.main_table {
+    margin: 10px auto;
+    /* border: black 1px solid; */
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+img {
+    width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}
+.column_index td {
+    width: 130px; 
+    font-size: 20px;
+}
+header {
+    margin: 15px;
+    text-align: center;
+}
+header p {
+    font-size: 40px;
+}
+#title_input {
+    text-align: center;
+    width: 450px;
+    height: 50px;
+    /* font-family: 'Black Han Sans', sans-serif; */
+    font-family: 'Cafe24Ssurround', sans-serif;
+    font-size: x-large;
+    border: white;
+    background-color: white;
+    padding: 5px;
+}
+#titleBtn {
+    /* font-family: 'Black Han Sans', sans-serif; */
+    font-family: 'Cafe24Ssurround', sans-serif;
+    border: rgb(255, 249, 192);
+    background-color: rgb(255, 249, 192);
+    height: 60px;
+    padding: 5px;
+    width: 100px;
+    font-size: x-large;
+}
+.nickname input{
+    border: rgba(255, 192, 203, 0.438) solid 2px;;
+    border-radius: 15px;
+    background-color: rgba(255, 192, 203, 0.438);
+    padding: 5px;
+    width: 80%;
+    height: 20px;
+}
+select {
+    border: rgba(255, 192, 203, 0.438) solid 2px;
+    padding: 5px;
+    background-color: rgba(255, 192, 203, 0.438);
+}
+.line_submit_btn{
+    /* font-family: 'Black Han Sans', sans-serif; */
+    border: rgb(255, 249, 192);
+    background-color: rgb(255, 249, 192);
+    padding: 7px;
+}
+.table_draw {
+    text-align: center;
+}
+footer {
+    font-family: 'Cafe24Ssurround', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+}
+
+
+
+#div_lineRemove button{
+    border: rgb(255, 249, 192);
+    background-color: rgb(255, 249, 192);
+    padding: 3px;
+    margin: 5px;
+}
+
+#select_remove {
+    background-color: rgb(173, 221, 240);
+    border: 3px solid rgb(173, 221, 240);
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px) { 
+    header{
+        text-align: center;
+        /* width: 100%; */
+        width: 1050px;
+    }
+    #title_input {
+        width: 70%;
+    }
+    #titleBtn {
+        width: 20%;
+        font-size: x-large;
+    }
+    .table_draw {
+        width: 100%;
+    }
+    .nickname{
+        min-width: 60px;
+        height: 20px;
+    }
+    .nickname input {
+        width: 70%;
+    }
+    .column_index td {
+        /* width: auto; */
+        min-width: 120px;
+        font-size: 20px;
+    }
+    .line_submit_btn{
+        width: 50px;
+    }
+    .main_table {
+        /* border-right: rgba(135, 207, 235, 0.493) 10px solid; */
+        border-right: white 10px solid;
+    }
+}
